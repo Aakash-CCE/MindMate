@@ -1,0 +1,6 @@
+{
+  "name": "MindMate",
+  "description": "AI-powered emotional wellness and personalized support system for daily mood check-ins, supportive conversation, and gentle habit building.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

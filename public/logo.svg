@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" fill="none">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&amp;display=swap");
+      .brand-text {
+        font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 68px;
+        letter-spacing: -1px;
+      }
+    </style>
+    <linearGradient id="mindmateRibbonGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#7E9F85" />
+      <stop offset="32%" stop-color="#8DAF93" />
+      <stop offset="50%" stop-color="#7B9E94" />
+      <stop offset="68%" stop-color="#698D9F" />
+      <stop offset="100%" stop-color="#5D8196" />
+    </linearGradient>
+    <linearGradient id="mindmateCrossingGrad" x1="30%" y1="20%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#88AA8E" />
+      <stop offset="50%" stop-color="#7A9D93" />
+      <stop offset="100%" stop-color="#668B9D" />
+    </linearGradient>
+    <linearGradient id="mindmateWaveGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#7FA290" />
+      <stop offset="45%" stop-color="#70949E" />
+      <stop offset="100%" stop-color="#63869A" />
+    </linearGradient>
+  </defs>
+
+  <!-- MindMate Emblem (Infinity Wave) -->
+  <g transform="translate(16, 22)">
+    <!-- Base Ribbon -->
+    <path d="M 88,48 C 71,26 55,15 38,15 C 19,15 9,30 9,48 C 9,66 19,81 38,81 C 55,81 71,70 88,48 C 105,26 121,15 138,15 C 157,15 167,30 167,48 C 167,66 157,81 138,81 C 121,81 105,70 88,48 Z" 
+          stroke="url(#mindmateRibbonGrad)" stroke-width="13.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Shadow -->
+    <path d="M 78,59 C 83,53 88,48 93,42" stroke="rgba(24, 45, 36, 0.16)" stroke-width="15" stroke-linecap="round"/>
+    <!-- Top Strand -->
+    <path d="M 72,28 C 80,38 88,48 96,58 C 101,64 105,68 111,74" 
+          stroke="url(#mindmateCrossingGrad)" stroke-width="13.5" stroke-linecap="round"/>
+    <!-- Soundwave -->
+    <path d="M 88,48 C 95,48 99,48 104,48 C 108,48 111,42 114,38 C 117,34 120,58 123,66 C 127,74 131,23 135,23 C 139,23 142,60 145,66 C 148,72 151,43 154,43 C 157,43 160,48 165,48" 
+          stroke="url(#mindmateWaveGrad)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark "MindMate" matching the image typography -->
+  <text x="215" y="92" class="brand-text">
+    <tspan fill="#7E9F85">Mind</tspan><tspan fill="#61849A">Mate</tspan>
+  </text>
+</svg>

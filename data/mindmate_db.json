@@ -1,0 +1,206 @@
+{
+  "users": [
+    {
+      "id": "demo-user-1",
+      "full_name": "Aakash",
+      "email": "demo@mindmate.local",
+      "password_hash": "$2b$10$9o9hDnjLHpTm5VPr0u3pqe6gXrciCkyCe/5jAbtEm1xJ/LpX2YbYy",
+      "created_at": "2026-08-27T18:42:28.136Z",
+      "updated_at": "2026-09-03T18:42:28.136Z"
+    },
+    {
+      "id": "user-1788461496943-cxirg0",
+      "full_name": "Aakash",
+      "email": "aakashmurugan441@gmail.com",
+      "password_hash": "$2b$10$2oQXJiV3dgLcTP0Ny1kVI.cO942GG.CBxL0aQKSkaGO7mFIEoOuL2",
+      "created_at": "2026-09-03T18:51:36.943Z",
+      "updated_at": "2026-09-03T18:51:36.943Z"
+    }
+  ],
+  "mood_entries": [
+    {
+      "id": "mood-seed-1",
+      "user_id": "demo-user-1",
+      "mood": "calm",
+      "intensity": 7,
+      "note": "Took a morning walk in the park. Feeling centered and ready for the day.",
+      "created_at": "2026-09-03T16:42:28.136Z"
+    },
+    {
+      "id": "mood-seed-2",
+      "user_id": "demo-user-1",
+      "mood": "anxious",
+      "intensity": 6,
+      "note": "Had a tight deadline at work today. Practiced box breathing.",
+      "created_at": "2026-09-02T16:42:28.136Z"
+    },
+    {
+      "id": "mood-seed-3",
+      "user_id": "demo-user-1",
+      "mood": "okay",
+      "intensity": 5,
+      "note": "Just an average Wednesday. Drank chamomile tea before sleeping.",
+      "created_at": "2026-09-01T16:42:28.136Z"
+    },
+    {
+      "id": "mood-seed-4",
+      "user_id": "demo-user-1",
+      "mood": "happy",
+      "intensity": 8,
+      "note": "Had lunch with an old friend. Felt connected and supported.",
+      "created_at": "2026-08-31T16:42:28.136Z"
+    },
+    {
+      "id": "mood-seed-5",
+      "user_id": "demo-user-1",
+      "mood": "lonely",
+      "intensity": 4,
+      "note": "Quiet evening at home. Talked with MindMate and felt heard.",
+      "created_at": "2026-08-30T16:42:28.136Z"
+    }
+  ],
+  "chat_sessions": [
+    {
+      "id": "session-seed-1",
+      "user_id": "demo-user-1",
+      "title": "Finding calm amidst busy days",
+      "created_at": "2026-09-02T16:42:28.136Z",
+      "updated_at": "2026-09-02T17:42:28.136Z"
+    },
+    {
+      "id": "session-1788461541532-eil7ta",
+      "user_id": "user-1788461496943-cxirg0",
+      "title": "I feel lonely today",
+      "created_at": "2026-09-03T18:52:21.532Z",
+      "updated_at": "2026-09-03T18:58:27.928Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-seed-1",
+      "session_id": "session-seed-1",
+      "role": "user",
+      "content": "Hi MindMate. I've been feeling a bit overwhelmed by everything on my plate this week.",
+      "created_at": "2026-09-02T16:42:28.136Z"
+    },
+    {
+      "id": "msg-seed-2",
+      "session_id": "session-seed-1",
+      "role": "assistant",
+      "content": "Hello, I hear you. When tasks pile up, it is very natural to feel overwhelmed. Thank you for taking a moment to pause and check in with yourself.\n\nWhat is taking up the most space in your mind right now?",
+      "created_at": "2026-09-02T16:48:28.136Z"
+    },
+    {
+      "id": "msg-seed-3",
+      "session_id": "session-seed-1",
+      "role": "user",
+      "content": "Work deadlines and not having enough quiet time for myself.",
+      "created_at": "2026-09-02T17:12:28.136Z"
+    },
+    {
+      "id": "msg-seed-4",
+      "session_id": "session-seed-1",
+      "role": "assistant",
+      "content": "That combination can feel like you're running on empty. When demands are high, even a five-minute micro-break can help reset your nervous system.\n\nWould you like to try a quick two-minute grounding exercise together, or would it feel better to just talk through what's on your list?",
+      "created_at": "2026-09-02T17:42:28.136Z"
+    },
+    {
+      "id": "msg-1788461541678-w9bl3u",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "I feel lonely today.",
+      "created_at": "2026-09-03T18:52:21.678Z"
+    },
+    {
+      "id": "msg-1788461556121-bxpb2r",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "I hear how heavy loneliness can feel. It's completely valid to crave connection, especially when things feel quiet or distant. I am glad you're here chatting with me right now.\n\nIs there a specific moment today that made that feeling stronger, or has it been building up for a while?",
+      "created_at": "2026-09-03T18:52:36.121Z"
+    },
+    {
+      "id": "msg-1788461564040-n71qtw",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "hi",
+      "created_at": "2026-09-03T18:52:44.040Z"
+    },
+    {
+      "id": "msg-1788461568636-yvnwug",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "Hi there! It's good to hear from you. \n\nHow are you holding up right now? We can talk through whatever is on your mind, or if you just want some light, casual company today, we can do that too. Whatever feels most comfortable for you.",
+      "created_at": "2026-09-03T18:52:48.636Z"
+    },
+    {
+      "id": "msg-1788461591359-3xxibc",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "i was feel bad today",
+      "created_at": "2026-09-03T18:53:11.359Z"
+    },
+    {
+      "id": "msg-1788461594849-jm2jyy",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "I'm really sorry you've been feeling so bad today. It sounds like it’s been weighing on you heavily, and going through days like that can be truly exhausting.\n\nI'm right here with you. Do you want to talk about what's been happening, or how that bad feeling is showing up for you? \n\nIf it's hard to put into words right now, that's completely okay too. We can just take things one slow breath at a time.",
+      "created_at": "2026-09-03T18:53:14.849Z"
+    },
+    {
+      "id": "msg-1788461631327-wl7p0a",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "start with friendly",
+      "created_at": "2026-09-03T18:53:51.327Z"
+    },
+    {
+      "id": "msg-1788461634254-2jll6y",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "Hello! Let's do that—a fresh, friendly start. 😊 \n\nI'm really glad to be hanging out with you right now. No pressure, no heavy expectations—just a warm, easy conversation. \n\nAre you cozy wherever you're sitting? We could talk about something you enjoy, like a favorite show, music, or a hobby, or just share whatever is on your mind. What sounds good to you?",
+      "created_at": "2026-09-03T18:53:54.254Z"
+    },
+    {
+      "id": "msg-1788461664276-8o54tn",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "what is you name",
+      "created_at": "2026-09-03T18:54:24.276Z"
+    },
+    {
+      "id": "msg-1788461667688-kvokav",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "My name is MindMate! I'm an AI companion here to chat, listen, and keep you company whenever you need a friendly space to talk. \n\nWhat should I call you?",
+      "created_at": "2026-09-03T18:54:27.688Z"
+    },
+    {
+      "id": "msg-1788461823442-hqw5nn",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "tom",
+      "created_at": "2026-09-03T18:57:03.442Z"
+    },
+    {
+      "id": "msg-1788461829139-i8c5o6",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. I am listening closely. Taking a moment to pause and put your feelings into words is already an important step in taking care of yourself.\n\nHow has this been sitting with you throughout your day?",
+      "created_at": "2026-09-03T18:57:09.139Z"
+    },
+    {
+      "id": "msg-1788461898060-e4uubx",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "user",
+      "content": "today my internal exam result i fail in 2 subjects",
+      "created_at": "2026-09-03T18:58:18.059Z"
+    },
+    {
+      "id": "msg-1788461907928-g5brgk",
+      "session_id": "session-1788461541532-eil7ta",
+      "role": "assistant",
+      "content": "Thank you for sharing that with me. I am listening closely. Taking a moment to pause and put your feelings into words is already an important step in taking care of yourself.\n\nHow has this been sitting with you throughout your day?",
+      "created_at": "2026-09-03T18:58:27.928Z"
+    }
+  ]
+}

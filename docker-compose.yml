@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: mindmate_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: mindmate
+      POSTGRES_PASSWORD: mindmatepassword
+      POSTGRES_DB: mindmate_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mindmate -d mindmate_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mindmate_backend
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://mindmate:mindmatepassword@postgres:5432/mindmate_db
+      JWT_SECRET: mindmate_jwt_super_secret_key_change_in_prod
+      AI_API_KEY: ${AI_API_KEY:-${GEMINI_API_KEY}}
+      AI_MODEL: ${AI_MODEL:-gemini-3.8-flash}
+      FRONTEND_URL: http://localhost:3000
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: mindmate_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_URL: http://localhost:8000
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
